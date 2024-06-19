@@ -18,7 +18,7 @@ public class CowAtribut : MonoBehaviour
         
         if(CowHP <= 0)
             {
-                Destroy(this, 0f);
+                Destroy(this.gameObject);
             }
     }
 

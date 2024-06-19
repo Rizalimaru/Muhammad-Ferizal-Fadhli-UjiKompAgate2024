@@ -8,6 +8,9 @@ public class MainMenuController : MonoBehaviour
 {
     public Button buttonStart;
     public Button buttonExit;
+    
+    public Button resume;
+    public Button BackToMain;
     void Start()
     {
         
@@ -16,7 +19,9 @@ public class MainMenuController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+        }
     }
 
     public void StartGame()
@@ -28,4 +33,10 @@ public class MainMenuController : MonoBehaviour
     {
         ExitGame();
     }
+
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
 }

@@ -7,10 +7,12 @@ public class PlayerController : MonoBehaviour
     private CharacterController characterController;
     private Animator animator;
     public GameObject pizzaAtk;
+    public AudioSource trow;
     public float playerSpeed;
     // Start is called before the first frame update
     void Start()
-    {
+    {   
+        trow = GetComponent<AudioSource>();
         characterController = GetComponent<CharacterController>();
         animator =  GetComponent<Animator>();
     }
