@@ -38,7 +38,8 @@ public class PlayerController : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space))
         {   
-            Instantiate(pizzaAtk,new Vector3(transform.position.x, 1 , transform.position.z), Quaternion.Euler(0,-90f,0));
+            var pizaa = Instantiate(pizzaAtk,new Vector3(transform.position.x, 1.5f , transform.position.z), Quaternion.Euler(0,-90f,0));
+            Destroy(pizaa,3f);
             animator.SetTrigger("Fire");
         }
     }

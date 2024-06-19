@@ -16,4 +16,12 @@ public class PizzaController : MonoBehaviour
     {
         transform.position += Vector3.left * Time.deltaTime * speedAtk;
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Enemy"))
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }
