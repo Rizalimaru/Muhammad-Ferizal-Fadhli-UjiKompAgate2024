@@ -576,6 +576,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c14413f64033b14cb509f24ba0a2478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pizzaAtk: {fileID: 6722124149869766571, guid: 5bcb939011808774484e4862d2356f2e,
+    type: 3}
   playerSpeed: 20
 --- !u!1 &1264554382
 GameObject:

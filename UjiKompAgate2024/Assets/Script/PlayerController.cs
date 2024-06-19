@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {   
     private CharacterController characterController;
     private Animator animator;
+    public GameObject pizzaAtk;
     public float playerSpeed;
     // Start is called before the first frame update
     void Start()
@@ -36,7 +37,8 @@ public class PlayerController : MonoBehaviour
         }
 
         if(Input.GetKeyDown(KeyCode.Space))
-        {
+        {   
+            Instantiate(pizzaAtk,new Vector3(transform.position.x, 1 , transform.position.z), Quaternion.Euler(0,-90f,0));
             animator.SetTrigger("Fire");
         }
     }
