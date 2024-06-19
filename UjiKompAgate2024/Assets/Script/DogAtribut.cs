@@ -17,7 +17,8 @@ public class DogAtribut : MonoBehaviour
     void Update()
     {
         if (CowHP <= 0)
-        {
+        {   
+            ScoreManager.Instance.AddScore(2);
             Destroy(this.gameObject);
         }
     }

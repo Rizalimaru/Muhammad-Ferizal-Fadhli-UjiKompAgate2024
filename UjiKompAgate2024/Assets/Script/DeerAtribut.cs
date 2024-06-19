@@ -17,7 +17,8 @@ public class DeerAtribut : MonoBehaviour
     void Update()
     {
         if (CowHP <= 0)
-        {
+        {   
+            ScoreManager.Instance.AddScore(1);
             Destroy(this.gameObject);
         }
     }
